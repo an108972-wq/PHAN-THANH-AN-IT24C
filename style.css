@@ -1,0 +1,661 @@
+/* TỐI ƯU: Đặt tên font rõ ràng hơn, nếu dùng font offline */
+@font-face {
+    font-family: 'Tahoma-Offline';
+    src: url(fontoffline/tahoma.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container-fluid {
+    background-color: #Fff;
+    height: auto;
+}
+
+/* ===============NAV BAR ============================ */
+.nav-logo {
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.nav-bar-content {
+    display: flex;
+    padding: 25px 100px 0px 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar-content a {
+    text-decoration: none;
+}
+
+.nav-bar-content a:hover {
+    color: #e3b14c;
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+}
+
+.nav a {
+    font-family: ABeeZee;
+    color: #2C2A2B;
+}
+
+.nav-tab {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-tab a {
+    color: #2C2A2B
+}
+
+/* ========================OUR STORY============================= */
+/* Đảm bảo col-6 là relative để định vị các phần tử con tuyệt đối */
+.our-story-content .col-6 {
+    position: relative; 
+}
+
+.pic-1 {
+    position: relative; /* Đặt Explore button nằm trong pic-1 */
+}
+
+.pic-1 img {
+    height: auto;
+    max-width: 100%; 
+    width: 522px;
+}
+
+.pic-1 h1 {
+    font-family: Noto Serif JP;
+    font-weight: 600;
+    font-size: 80px;
+}
+
+.mini-content {
+    display: flex;
+}
+
+.mini-content h3 {
+    font-family: Noto Serif JP;
+    font-weight: 600;
+}
+
+.mini-content p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    max-width: 70%;
+}
+
+.pic-2 img {
+    height: auto;
+    max-width: 100%; 
+    width: 490px;
+}
+
+.word {
+    margin-top: 20px;
+}
+
+.pic-2 h3 {
+    font-family: Noto Serif JP;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.pic-2 p {
+    width: 65%;
+}
+
+.pic-2 p {
+    font-family: Tahoma; 
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* -------------------- Nút EXPLORE -------------------- */
+.explore-button-wrapper {
+    position: absolute;
+    right: -50px; 
+    top: 60%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
+    border: 1px solid #2C2A2B;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    z-index: 10;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.explore-button-wrapper:hover {
+    background-color: #f0f0f0;
+}
+
+.explore-button {
+    font-family: Noto Serif JP;
+    font-size: 16px;
+    color: #2C2A2B;
+    text-decoration: none;
+    line-height: 1.1;
+    text-align: center;
+    display: block;
+}
+
+/* -------------------- Media Overlay (Play Video & Social) -------------------- */
+.media-overlay {
+    position: absolute;
+    top: 15%; 
+    right: -25px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 5;
+    height: 100%;
+}
+
+/* --- Social Icons --- */
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: #2C2A2B;
+    font-size: 14px;
+    opacity: 0.7;
+    text-decoration: none;
+}
+.social-icons a:hover {
+    opacity: 1;
+}
+
+/* --- Play Video Button --- */
+.play-video-button {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    right: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    z-index: 6;
+    transition: opacity 0.2s;
+}
+.play-video-button:hover {
+    opacity: 0.8;
+}
+
+.play-video-button i {
+    font-size: 20px;
+    /* THAY ĐỔI: Màu nền đen và màu icon trắng */
+    color: #ffffff; /* Màu icon trắng */
+    background-color: #2C2A2B; /* Màu nền đen */
+    border: 1px solid #2C2A2B; /* Viền cùng màu nền */ 
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.play-video-button p {
+    font-family: Tahoma;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.1;
+    color: #2C2A2B;
+    text-align: center;
+}
+/* ============================SẢN PHẨM CHUNG (PRODUCT SECTIONS) ======================================= */
+.product-section {
+    margin-top: 50px;
+}
+
+.product-pic img {
+    height: auto;
+    max-width: 100%;
+    width: 480px;
+}
+
+.product-text h2 {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: Noto Serif JP;
+    margin-bottom: 15px;
+}
+
+.product-text p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    max-width: 80%;
+    margin-bottom: 10px;
+}
+
+.product-button-size {
+    display: flex;
+    gap: 30px;
+}
+
+.product-button-size p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1; 
+    margin: 0;
+}
+
+.product-button-size button {
+    border: 1px solid #ccc; 
+    height: 30px; 
+    width: 30px;
+    background-color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.product-button-size button:hover {
+    background-color: #f0f0f0;
+}
+
+.product-button-size button.selected {
+    background-color: #2C2A2B;
+    color: #ffffff;
+}
+.product-button-size button.selected p {
+    color: #ffffff;
+}
+
+.product-button-addtocart {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.product-button-addtocart button {
+    border: none;
+    background-color: #2C2A2B;
+    color: #ffffff;
+    height: 44px;
+    width: 170px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+.product-button-addtocart button:hover {
+    opacity: 0.8;
+}
+
+
+.product-button-addtocart h2 {
+    margin-left: 30px;
+    font-family: Noto Serif JP;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+/* Các tùy chỉnh riêng biệt */
+.gold-black {
+    margin: 50px 0px 0px 115px;
+}
+
+.gold-black .product-pic {
+    width: 480px;
+    height: 480px;
+}
+
+
+/* ==============Introduce================== */
+.in-pic img {
+    width: 450px;
+    height: 550px;
+}
+
+.in-text h2 {
+    font-family: Noto Serif JP;
+    font-weight: 700px;
+    font-size: 54px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.in-text h3 {
+    font-family: Tahoma;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 100%;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.in-text p {
+    font-family: Tahoma;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 150%;
+    max-width: 80%;
+}
+
+.in-text button {
+    width: 170px;
+    height: 50px;
+    border: none;
+    font-family: Tahoma;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    background-color: #3D3D3F;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.introduce {
+    padding-left: 30px;
+}
+
+.in-1 {
+    margin-bottom: 35px;
+}
+
+.in-2 {
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.in-3 {
+    align-items: center;
+}
+
+.trust {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.trust h2 {
+    align-items: center;
+    font-family: Tahoma;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.trust ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    gap: 60px;
+}
+
+.trust .n2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.trust .n3 {
+    font-family: Noto Serif JP;
+    font-weight: 900;
+}
+
+.trust .n4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+/* ============Join =================== */
+.join h2 {
+    font-family: Noto Serif JP;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+.search-form {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.search-s {
+    width: 350px;
+    height: 40px;
+    padding: 10px;
+}
+
+.search-form button {
+    font-family: Tahoma;
+    font-weight: 600;
+    font-size: 12px;
+    border: none;
+    background-color: black;
+    color: #ffffff;
+    width: 160px;
+    cursor: pointer;
+}
+
+/* ==================OUR BLOG ========================*/
+.our-blog {
+    display: flex;
+    margin-top: 30px;
+}
+
+.our-blog-content h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.our-blog-content {
+    padding-left: 54px;
+    justify-content: center;
+}
+
+.our-blog-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.our-blog-content h3 {
+    font-family: Tahoma;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+
+.our-blog-content p {
+    font-family: Tahoma;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: capitalize;
+    max-width: 80%;
+}
+
+.space {
+    height: 100px;
+}
+
+/* Giữ lại style cũ cho các class chung nếu có */
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+.hang h4, .hang1 h4 {
+    margin-left: 30px;
+}
+.hang ul, .hang1 ul {
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+}
+.hang1 {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+.hang {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+
+/* ======================= REVIEWS (Bootstrap) ======================= */
+.review-item {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff8e8e6;
+    border-radius: 15px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.review-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.review-item h5 {
+    margin: 10px 0 5px;
+    font-weight: 600;
+}
+
+.review-item p {
+    font-size: 15px;
+    color: #555;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    background-size: 60%;
+}
+
+.carousel {
+    margin-bottom: 50px;
+}
+
+
+/* ======================== FOOTER MỚI (Overlay style) ======================== */
+.footer {
+    padding: 50px 0; 
+    background-color: #f7f3ed; /* Màu nền kem nhạt */
+    color: #333;
+}
+
+.footer .row {
+    justify-content: space-around;
+}
+
+.footer-column { 
+    text-align: left;
+    margin-bottom: 20px;
+    /* Ghi đè căn chỉnh của hang/hang1 */
+    padding-left: 15px !important; 
+    padding-right: 15px !important;
+}
+
+.footer-column h4 {
+    font-family: Noto Serif JP, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #2C2A2B;
+    margin-left: 0 !important; 
+}
+
+.footer-column ul li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #666;
+}
+
+.footer-column ul li:hover {
+    color: #2C2A2B;
+    cursor: pointer;
+}
+
+/* Style cho input tìm kiếm trong Resources */
+.footer-column input[type="text"] {
+    width: 100%; 
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Social Icons trong footer */
+.social-footer-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.social-icon-btn {
+    background-color: #2C2A2B;
+    color: #ffffff;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon-btn:hover {
+    background-color: #555;
+}
+
+/* ======================== COPYRIGHT SECTION (Màu đen) ======================== */
+.copyright-section {
+    background-color: #2C2A2B; /* Nền đen đậm */
+    color: #ffffff; /* Chữ trắng */
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
